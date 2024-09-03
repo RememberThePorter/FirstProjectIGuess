@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "L",
+    "L",
+    "L"
+  ],
+  "key": {
+    "L": {
+      "item": "firstproject:chain_link"
+    }
+  },
+  "result": {
+    "id": "minecraft:chain",
+    "count": 1
+  }
+}
