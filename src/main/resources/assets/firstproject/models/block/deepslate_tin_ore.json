@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "firstproject:block/deepslate_tin_ore"
+  }
+}
