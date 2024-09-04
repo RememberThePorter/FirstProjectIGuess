@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "minecraft:leather"
+    }
+  ],
+  "result": {
+    "id": "firstproject:boiled_leather"
+  }
+}

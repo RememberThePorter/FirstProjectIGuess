@@ -20,6 +20,11 @@ public class ModItems {
             .displayName(Text.translatable("itemGroup.firstproject"))
             .build();
 
+    public static final Item BOILED_LEATHER = register(
+            new Item(new Item.Settings()),
+            "boiled_leather"
+    );
+
     public static final Item CHAIN_LINK = register(
             new Item(new Item.Settings()),
             "chain_link"
@@ -28,6 +33,21 @@ public class ModItems {
     public static final Item CHAINMAIL = register(
             new Item(new Item.Settings()),
             "chainmail"
+    );
+
+    public static final Item RAW_TIN = register(
+            new Item(new Item.Settings()),
+            "raw_tin"
+    );
+
+    public static final Item TIN_INGOT = register(
+            new Item(new Item.Settings()),
+            "tin_ingot"
+    );
+
+    public static final Item TIN_NUGGET = register(
+            new Item(new Item.Settings()),
+            "tin_nugget"
     );
 
     public static Item register(Item item, String id) {
@@ -39,8 +59,12 @@ public class ModItems {
     public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
+            itemGroup.add(ModItems.BOILED_LEATHER);
             itemGroup.add(ModItems.CHAIN_LINK);
             itemGroup.add(ModItems.CHAINMAIL);
+            itemGroup.add(ModItems.RAW_TIN);
+            itemGroup.add(ModItems.TIN_INGOT);
+            itemGroup.add(ModItems.TIN_NUGGET);
         });
     }
 }

@@ -2,10 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "CCC",
-    "C C",
+    "B B",
     "C C"
   ],
   "key": {
+    "B": {
+      "item": "firstproject:boiled_leather"
+    },
     "C": {
       "item": "firstproject:chainmail"
     }

@@ -1,5 +1,15 @@
 {
+  "block.firstproject.deepslate_tin_ore": "Deepslate Tin ore",
+  "block.firstproject.tin_block": "Block of Tin",
+  "block.firstproject.tin_ore": "Tin Ore",
+  "item.firstproject.boiled_leather": "Boiled Leather",
   "item.firstproject.chain_link": "Chain Link",
   "item.firstproject.chainmail": "Chainmail",
+  "item.firstproject.deepslate_tin_ore": "Deepslate Tin Ore",
+  "item.firstproject.raw_tin": "Raw Tin",
+  "item.firstproject.tin_block": "Block of Tin",
+  "item.firstproject.tin_ingot": "Tin Ingot",
+  "item.firstproject.tin_nugget": "Tin Nugget",
+  "item.firstproject.tin_ore": "Tin Ore",
   "itemGroup.firstproject": "First Project"
 }
