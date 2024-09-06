@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.client.gl.Uniform;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -14,6 +15,17 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
+    public static final Block BRASS_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL).strength(2.5f)),
+            "brass_block",
+            true
+    );
+
+    public static final Block BRONZE_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL).strength(5.0f)),
+            "bronze_block",
+            true
+    );
 
     public static final Block DEEPSLATE_TIN_ORE = register(
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(4.5f)),
@@ -21,9 +33,21 @@ public class ModBlocks {
             true
     );
 
+    public static final Block DEEPSLATE_ZINC_ORE = register(
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.create().sounds(BlockSoundGroup.DEEPSLATE).strength(3.0f)),
+            "deepslate_zinc_order",
+            true
+    );
+
     public static final Block RAW_TIN_BLOCK = register(
             new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(5.0f)),
             "raw_tin_block",
+            true
+    );
+
+    public static final Block RAW_ZINC_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(2.0f)),
+            "raw_zinc_block",
             true
     );
 
@@ -37,6 +61,18 @@ public class ModBlocks {
         new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(3.0f)),
         "tin_ore",
         true
+    );
+
+    public static final Block ZINC_BLOCK = register(
+            new Block(AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL).strength(2.0f)),
+            "zinc_block",
+            true
+    );
+
+    public static final Block ZINC_ORE = register(
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.create().sounds(BlockSoundGroup.METAL).strength(1.5f)),
+            "zinc_ore",
+            true
     );
 
     public static Block register(Block block, String id, boolean shouldRegisterItem) {

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "TTT",
+    "TTT"
+  ],
+  "key": {
+    "T": {
+      "item": "firstproject:raw_tin"
+    }
+  },
+  "result": {
+    "id": "firstproject:raw_tin_block",
+    "count": 1
+  }
+}

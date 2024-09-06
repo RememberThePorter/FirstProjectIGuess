@@ -25,6 +25,16 @@ public class ModItems {
             "boiled_leather"
     );
 
+    public static final Item BRONZE_INGOT = register(
+            new Item(new Item.Settings()),
+            "bronze_ingot"
+    );
+
+    public static final Item BRONZE_NUGGET = register(
+            new Item(new Item.Settings()),
+            "bronze_nugget"
+    );
+
     public static final Item CHAIN_LINK = register(
             new Item(new Item.Settings()),
             "chain_link"

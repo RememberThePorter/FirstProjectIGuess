@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "firstproject:raw_tin_block"
+    }
+  ],
+  "result": {
+    "id": "firstproject:raw_tin",
+    "count": 1
+  }
+}

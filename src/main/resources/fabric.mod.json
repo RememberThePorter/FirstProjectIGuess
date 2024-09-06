@@ -5,7 +5,7 @@
 	"name": "Tutorial Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"CreepersNeedHugs"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -15,6 +15,9 @@
 	"icon": "assets/firstproject/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"net.creepersneedhugs.firstproject.FirstProjectDataGenerator"
+		],
 		"main": [
 			"net.creepersneedhugs.firstproject.FirstProject"
 		]
