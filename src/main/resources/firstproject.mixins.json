@@ -1,10 +1,12 @@
 {
 	"required": true,
+	"minVersion": "0.8",
 	"package": "net.creepersneedhugs.firstproject.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"
 	],
+	"server": [],
 	"injectors": {
 		"defaultRequire": 1
 	}
