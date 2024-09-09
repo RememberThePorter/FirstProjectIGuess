@@ -1,11 +1,10 @@
-package net.creepersneedhugs.firstproject.content.registry;
+package net.remembertheporter.firstproject.content.registry;
 
-import net.creepersneedhugs.firstproject.FirstProject;
+import net.remembertheporter.firstproject.FirstProject;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.client.gl.Uniform;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -35,7 +34,7 @@ public class ModBlocks {
 
     public static final Block DEEPSLATE_ZINC_ORE = register(
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.create().sounds(BlockSoundGroup.DEEPSLATE).strength(3.0f)),
-            "deepslate_zinc_order",
+            "deepslate_zinc_ore",
             true
     );
 
@@ -86,10 +85,16 @@ public class ModBlocks {
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ModItems.CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
+            itemGroup.add(ModBlocks.BRASS_BLOCK);
+            itemGroup.add(ModBlocks.BRONZE_BLOCK);
             itemGroup.add(ModBlocks.DEEPSLATE_TIN_ORE);
+            itemGroup.add(ModBlocks.DEEPSLATE_ZINC_ORE);
             itemGroup.add(ModBlocks.RAW_TIN_BLOCK);
+            itemGroup.add(ModBlocks.RAW_ZINC_BLOCK);
             itemGroup.add(ModBlocks.TIN_BLOCK);
             itemGroup.add(ModBlocks.TIN_ORE);
+            itemGroup.add(ModBlocks.ZINC_BLOCK);
+            itemGroup.add(ModBlocks.ZINC_ORE);
         });
     }
 }

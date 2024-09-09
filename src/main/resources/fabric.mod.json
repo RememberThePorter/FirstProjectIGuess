@@ -5,7 +5,7 @@
 	"name": "Tutorial Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"CreepersNeedHugs"
+		"RememberThePorter"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"fabric-datagen": [
-			"net.creepersneedhugs.firstproject.FirstProjectDataGenerator"
+			"net.remembertheporter.firstproject.FirstProjectDataGenerator"
 		],
 		"main": [
-			"net.creepersneedhugs.firstproject.FirstProject"
+			"net.remembertheporter.firstproject.FirstProject"
 		]
 	},
 	"mixins": [

@@ -1,7 +1,7 @@
-package net.creepersneedhugs.firstproject;
+package net.remembertheporter.firstproject;
 
-import net.creepersneedhugs.firstproject.content.registry.ModBlocks;
-import net.creepersneedhugs.firstproject.content.registry.ModItems;
+import net.remembertheporter.firstproject.content.registry.ModBlocks;
+import net.remembertheporter.firstproject.content.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
