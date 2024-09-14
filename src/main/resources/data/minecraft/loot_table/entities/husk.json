@@ -7,15 +7,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:leather",
+          "name": "minecraft:rotten_flesh",
           "functions": [
             {
               "function": "minecraft:set_count",
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 242.0,
-                "min": 241.0
+                "max": 184.0,
+                "min": 183.0
               }
             }
           ]
@@ -28,18 +28,52 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:beef",
+          "name": "minecraft:bone",
           "functions": [
             {
               "function": "minecraft:set_count",
               "add": false,
-              "//": "The following is based on calculations from this random Reddit post: https://www.reddit.com/r/Minecraft/comments/wyc71o/you_should_get_approx_2667_steaks_per_cow",
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2667.0,
-                "min": 2666.0
+                "max": 206.0,
+                "min": 206.0
               }
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance_with_enchanted_bonus",
+          "enchanted_chance": {
+            "type": "minecraft:linear",
+            "base": 0.035,
+            "per_level_above_first": 0.01
+          },
+          "enchantment": "minecraft:looting",
+          "unenchanted_chance": 0.025
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potato",
+          "functions": [
             {
               "function": "minecraft:furnace_smelt",
               "conditions": [
@@ -79,28 +113,7 @@
           ]
         }
       ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 207.0,
-                "min": 207.0
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
-  "random_sequence": "minecraft:entities/cow"
+  "random_sequence": "minecraft:entities/husk"
 }

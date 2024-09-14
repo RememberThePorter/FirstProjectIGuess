@@ -7,37 +7,24 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:leather",
+          "name": "minecraft:cod",
           "functions": [
             {
               "function": "minecraft:set_count",
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 242.0,
-                "min": 241.0
+                "max": 1.0,
+                "min": 0.0
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:beef",
-          "functions": [
+            },
             {
-              "function": "minecraft:set_count",
-              "add": false,
-              "//": "The following is based on calculations from this random Reddit post: https://www.reddit.com/r/Minecraft/comments/wyc71o/you_should_get_approx_2667_steaks_per_cow",
+              "function": "minecraft:enchanted_count_increase",
+              "enchantment": "minecraft:looting",
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2667.0,
-                "min": 2666.0
+                "max": 1.0,
+                "min": 0.0
               }
             },
             {
@@ -93,8 +80,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 207.0,
-                "min": 207.0
+                "max": 349.0,
+                "min": 250.0
               }
             }
           ]
@@ -102,5 +89,5 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:entities/cow"
+  "random_sequence": "minecraft:entities/dolphin"
 }
