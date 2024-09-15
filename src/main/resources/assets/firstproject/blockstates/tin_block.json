@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "firstproject:block/tin_block"
+    }
+  }
+}
