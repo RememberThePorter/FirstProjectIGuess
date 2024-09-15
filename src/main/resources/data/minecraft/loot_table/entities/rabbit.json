@@ -32,6 +32,7 @@
       ]
     },
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -81,8 +82,7 @@
             }
           ]
         }
-      ],
-      "rolls": 1.0
+      ]
     },
     {
       "rolls": 1.0,
@@ -93,7 +93,7 @@
           "name": "minecraft:rabbit_foot",
           "functions": [
             {
-              "type": "minecraft:set_count",
+              "function": "minecraft:set_count",
               "add": false,
               "count": 2.0
             }
