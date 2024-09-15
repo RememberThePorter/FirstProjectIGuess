@@ -7,15 +7,24 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:leather",
+          "name": "minecraft:rabbit_hide",
           "functions": [
             {
               "function": "minecraft:set_count",
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 363.0,
-                "min": 362.0
+                "max": 1.0,
+                "min": 0.0
+              }
+            },
+            {
+              "function": "minecraft:enchanted_count_increase",
+              "enchantment": "minecraft:looting",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.0
               }
             }
           ]
@@ -23,22 +32,16 @@
       ]
     },
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:beef",
+          "name": "minecraft:rabbit",
           "functions": [
             {
               "function": "minecraft:set_count",
               "add": false,
-              "//": "The following is based on calculations from this random Reddit post: https://www.reddit.com/r/Minecraft/comments/wyc71o/you_should_get_approx_2667_steaks_per_cow",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2667.0,
-                "min": 2666.0
-              }
+              "count": 1.0
             },
             {
               "function": "minecraft:furnace_smelt",
@@ -78,6 +81,24 @@
             }
           ]
         }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rabbit_foot",
+          "functions": [
+            {
+              "type": "minecraft:set_count",
+              "add": false,
+              "count": 2.0
+            }
+          ]
+        }
       ]
     },
     {
@@ -91,70 +112,16 @@
             {
               "function": "minecraft:set_count",
               "add": false,
-              "count": 207.0
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 214.0,
+                "min": 205.0
+              }
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:red_mushroom",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "add": false,
-              "count": 3.0
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "type_specific": {
-              "type": "minecraft:mooshroom",
-              "variant": "red"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:brown_mushroom",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "add": false,
-              "count": 3.0
-            }
-          ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "type_specific": {
-              "type": "minecraft:mooshroom",
-              "variant": "brown"
-            }
-          }
         }
       ]
     }
   ],
-  "random_sequence": "minecraft:entities/mooshroom"
+  "random_sequence": "minecraft:entities/rabbit"
 }
