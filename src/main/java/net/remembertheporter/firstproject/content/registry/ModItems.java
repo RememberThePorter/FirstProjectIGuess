@@ -1,6 +1,8 @@
 package net.remembertheporter.firstproject.content.registry;
 
 import net.minecraft.component.type.FoodComponent;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.remembertheporter.firstproject.FirstProject;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -58,7 +60,11 @@ public class ModItems {
 
     public static final Item HUMAN_FLESH = register(
             new Item(new Item.Settings().food(
-                    new FoodComponent.Builder().nutrition(4).saturationModifier(0.7f).build()
+                    new FoodComponent.Builder()
+                            .nutrition(4)
+                            .saturationModifier(0.7f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 400), 1.0f)
+                            .build()
             )),
             "human_flesh"
     );
