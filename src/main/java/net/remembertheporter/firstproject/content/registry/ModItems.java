@@ -1,5 +1,6 @@
 package net.remembertheporter.firstproject.content.registry;
 
+import net.minecraft.component.type.FoodComponent;
 import net.remembertheporter.firstproject.FirstProject;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -55,6 +56,13 @@ public class ModItems {
             "chainmail"
     );
 
+    public static final Item HUMAN_FLESH = register(
+            new Item(new Item.Settings().food(
+                    new FoodComponent.Builder().nutrition(4).saturationModifier(0.7f).build()
+            )),
+            "human_flesh"
+    );
+
     public static final Item RAW_TIN = register(
             new Item(new Item.Settings()),
             "raw_tin"
@@ -101,6 +109,7 @@ public class ModItems {
             itemGroup.add(ModItems.BRONZE_NUGGET);
             itemGroup.add(ModItems.CHAIN_LINK);
             itemGroup.add(ModItems.CHAINMAIL);
+            itemGroup.add(ModItems.HUMAN_FLESH);
             itemGroup.add(ModItems.RAW_TIN);
             itemGroup.add(ModItems.RAW_ZINC);
             itemGroup.add(ModItems.TIN_INGOT);
