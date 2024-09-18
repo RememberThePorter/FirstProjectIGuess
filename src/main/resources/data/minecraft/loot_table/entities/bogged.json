@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:arrow",
+          "name": "minecraft:tipped_arrow",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -19,13 +19,17 @@
               }
             },
             {
+              "function": "minecraft:enchanted_count_increase",
+              "enchantment": "minecraft:looting",
               "count": {
                 "type": "minecraft:uniform",
                 "max": 10.0,
                 "min": 0.0
-              },
-              "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              }
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:poison"
             }
           ]
         }
@@ -59,5 +63,5 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:entities/skeleton"
+  "random_sequence": "minecraft:entities/bogged"
 }
