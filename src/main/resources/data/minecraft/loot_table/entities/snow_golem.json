@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:snow_block0",
+          "name": "minecraft:snow_block",
           "functions": [
             {
               "function": "minecraft:set_count",
