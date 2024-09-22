@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "firstproject:wooden_oar"
+    },
+    {
+      "item": "firstproject:wooden_oar"
+    }
+  ],
+  "result": {
+    "id": "firstproject:double_wooden_oar",
+    "count": 1
+  }
+}

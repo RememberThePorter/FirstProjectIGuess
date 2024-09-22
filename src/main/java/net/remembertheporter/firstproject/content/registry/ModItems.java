@@ -68,6 +68,11 @@ public class ModItems {
             "door_handle"
     );
 
+    public static final Item DOUBLE_WOODEN_OAR = register(
+            new Item(new Item.Settings()),
+            "double_wooden_oar"
+    );
+
     public static final Item HUMAN_FLESH = register(
             new Item(new Item.Settings().food(
                     new FoodComponent.Builder()
@@ -99,6 +104,11 @@ public class ModItems {
             "tin_nugget"
     );
 
+    public static final Item WOODEN_OAR = register(
+            new Item(new Item.Settings()),
+            "wooden_oar"
+    );
+
     public static final Item ZINC_INGOT = register(
             new Item(new Item.Settings()),
             "zinc_ingot"
@@ -127,11 +137,13 @@ public class ModItems {
             itemGroup.add(ModItems.CHAIN_LINK);
             itemGroup.add(ModItems.CHAINMAIL);
             itemGroup.add(ModItems.DOOR_HANDLE);
+            itemGroup.add(ModItems.DOUBLE_WOODEN_OAR);
             itemGroup.add(ModItems.HUMAN_FLESH);
             itemGroup.add(ModItems.RAW_TIN);
             itemGroup.add(ModItems.RAW_ZINC);
             itemGroup.add(ModItems.TIN_INGOT);
             itemGroup.add(ModItems.TIN_NUGGET);
+            itemGroup.add(ModItems.WOODEN_OAR);
             itemGroup.add(ModItems.ZINC_INGOT);
             itemGroup.add(ModItems.ZINC_NUGGET);
         });
