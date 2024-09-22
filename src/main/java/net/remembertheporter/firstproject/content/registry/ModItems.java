@@ -23,6 +23,11 @@ public class ModItems {
             .displayName(Text.translatable("itemGroup.firstproject"))
             .build();
 
+    public static final Item BRASS_HINGE = register(
+            new Item(new Item.Settings()),
+            "brass_hinge"
+    );
+
     public static final Item BRASS_INGOT = register(
             new Item(new Item.Settings()),
             "brass_ingot"
@@ -56,6 +61,11 @@ public class ModItems {
     public static final Item CHAINMAIL = register(
             new Item(new Item.Settings()),
             "chainmail"
+    );
+
+    public static final Item DOOR_HANDLE = register(
+            new Item(new Item.Settings()),
+            "door_handle"
     );
 
     public static final Item HUMAN_FLESH = register(
@@ -108,6 +118,7 @@ public class ModItems {
     public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
+            itemGroup.add(ModItems.BRASS_HINGE);
             itemGroup.add(ModItems.BRASS_INGOT);
             itemGroup.add(ModItems.BRASS_NUGGET);
             itemGroup.add(ModItems.BOILED_LEATHER);
@@ -115,6 +126,7 @@ public class ModItems {
             itemGroup.add(ModItems.BRONZE_NUGGET);
             itemGroup.add(ModItems.CHAIN_LINK);
             itemGroup.add(ModItems.CHAINMAIL);
+            itemGroup.add(ModItems.DOOR_HANDLE);
             itemGroup.add(ModItems.HUMAN_FLESH);
             itemGroup.add(ModItems.RAW_TIN);
             itemGroup.add(ModItems.RAW_ZINC);
