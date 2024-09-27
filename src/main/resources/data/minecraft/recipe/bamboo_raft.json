@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "B": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "O": {
+      "item": "firstproject:double_wooden_oar"
+    }
+  },
+  "pattern": [
+    " O",
+    "BBB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:bamboo_raft"
+  }
+}
